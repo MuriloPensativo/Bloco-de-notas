@@ -5,8 +5,9 @@ import com.example.blocodenotas.Models.Note
 
 
 @Database(entities = arrayOf(Note :: class), version = 1, exportSchema = false)
-class NoteDatabase {
+abstract class NoteDatabase {
 
+    abstract fun getNotDao() : NoteDao
 
 
 }
