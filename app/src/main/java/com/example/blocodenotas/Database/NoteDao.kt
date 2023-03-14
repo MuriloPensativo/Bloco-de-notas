@@ -14,10 +14,10 @@ import com.example.blocodenotas.Models.Note
 interface NoteDao {
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    suspend fun insert(note: ContactsContract.CommonDataKinds.Note)
+    suspend fun insert(note: Note)
 
     @Delete
-    suspend fun delete(note: ContactsContract.CommonDataKinds.Note)
+    suspend fun delete(note: Note)
 
 
     @Query("Select * from notes_table order by id ASC")
