@@ -154,3 +154,7 @@ class MainActivity : AppCompatActivity(), NotesAdapter.NotesClickListener, Popup
         return false
     }
 }
+
+private fun Intent.putExtra(s: String) {
+
+}
